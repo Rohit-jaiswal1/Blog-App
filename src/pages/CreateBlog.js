@@ -23,7 +23,7 @@ const CreateBlog = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("http://localhost:4000"+"/api/v1/blog/create-blog", {
+      const { data } = await axios.post("https://blog-app-jt6l.vercel.app"+"/api/v1/blog/create-blog", {
         title: inputs.title,
         description: inputs.description,
         image: inputs.image,

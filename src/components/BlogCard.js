@@ -31,7 +31,7 @@ export default function BlogCard({
 
   const handleDelete = async () => {
     try {
-      const {data} = await axios.delete("http://localhost:4000"+`/api/v1/blog/delete-blog/${id}`);
+      const {data} = await axios.delete("https://blog-app-jt6l.vercel.app"+`/api/v1/blog/delete-blog/${id}`);
       if (data?.success) {
         alert("Blog Deleted");
         toast.success("Blog deleted sucessfully")

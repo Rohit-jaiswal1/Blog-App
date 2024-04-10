@@ -19,7 +19,7 @@ connectDB()
 app.use('/api/v1/user',userRoutes)
 app.use('/api/v1/blog',blogRoutes)
 
-
+console.time()
 
 const PORT = process.env.PORT || 4000
 app.listen(PORT,()=>{
